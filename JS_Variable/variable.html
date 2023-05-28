@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Variable</title>
+</head>
+<body>
+    <h1> javascript Variable</h1>
+    
+    <p id="use_var"></p>
+    <p id="use_let"></p>
+    <p id="use_nothing"></p>
+    <p id="tugas_variable"></p>
+
+    <script>
+        //using Var
+        var x1 = 5;
+        var y1 = 6;
+        var z1 = x1+y1;
+        document.getElementById("use_var").innerHTML = "the value of z1 if using var variable is : " + z1;
+
+        //using let
+        let  x2 = 5;
+        let  y2 = 6;
+        let  z2 = x2+y2;
+        document.getElementById("use_let").innerHTML = "the value of z2 if using let variable is : " + z2;
+
+        //using nothing
+        x3 = 5;
+        y3 = 6;
+        z3 = x3+y3;
+        document.getElementById("use_nothing").innerHTML = "the value of z1 if using nothing variable is : " + z3;
+
+        // tugas variable
+        var x = "10" + 10 + 10;
+        var y = 10 + 10 + "10";
+        document.getElementById("tugas_variable").innerHTML = "The value of x + y = " + x+y;
+
+    </script>
+
+</body>
+</html>

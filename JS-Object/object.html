@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>JS Object</title>
+</head>
+
+<body>
+    <h3>JS Object</h3>
+    <p id="demo"></p>
+
+    <script>
+       // JS Object
+       // Create an object
+       const car = {
+        type : "Fiat",
+        model : "F500",
+        color :"White",
+        specification : function(){
+            return this.type + " " + this.model;
+        }
+       }
+
+       //display some data form the object
+    //    document.getElementById("demo").innerHTML = "the car typ is " + car.type;
+    document.getElementById("demo").innerHTML = car.specification();
+
+   </script>
+</body>
+</html>
