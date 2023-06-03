@@ -8,17 +8,24 @@
     <h3>JS function</h3>
     <p id="demo"></p>
 
-    <script>
-      let x = 3;
-      let y = 4 ;
+    <script>   
+    // if (new Date().getHours() < 18) {
+    //     document.getElementById("demo").innerHTML = "Good Day!"
+    // }
 
-      if (x>y){
-        document.getElementById("demo").innerHTML = "Hore saya Bisa";
-      }
-      else {
-        document.getElementById("demo").innerHTML = "Saya Gagal"
-      }
-      
+    const hour = new Date().getHours();
+    let greeting;
+
+    if (new Date().getHours() < 11) {
+        greeting = "Good Morning";
+    }
+    else if (new Date().getHours() <18) {
+        greeting ="Good Day"
+    }
+    else {
+        greeting = "Good Night"
+    }
+    document.getElementById("demo").innerHTML = greeting;
 
    </script>
 </body>
